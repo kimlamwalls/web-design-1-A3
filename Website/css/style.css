@@ -1,0 +1,213 @@
+
+
+
+@font-face {
+    font-family: fancy;
+    src: url(../fonts/QuickKiss.ttf);
+}
+
+
+h1 {
+    font-family: "fancy";
+    font-size: 4vw; 
+    color:#e4c8be;     
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.open-sans plain {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+  /* Set background to image, and darken with gradient */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/ledge.jpg');
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: repeat-y; 
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0%;
+  height: 100vh;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center; /* Align vertical center */
+    justify-content:flex-start;
+    padding: 1vw;
+    background-color: #333;
+    margin-bottom: 3em;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    overflow: hidden; /* Stop overflow outside circle */
+    background-color:#e2c7be;
+    margin-left: 1em;
+}
+
+.logo-container img {
+     width: 5vw; /* controls size of image inside  */
+}
+
+
+.header-nav ul {
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0;
+    padding: 10px;
+    overflow: hidden; /* Clear floats */
+    background-color: #333; /* Dark background color */
+    height: 100%;
+  }
+
+  .header-nav li {
+    float: left; /* Display links inline */
+  }
+
+  .header-nav li a {
+    display: block; /* Expand click area to entire list item */
+    color: #e2c7be; /* Text color */
+    text-align: center; /* Center text */
+    padding: 1vw 1vw; /* Spacing around text */
+    text-decoration: none; /* Remove default underline */
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5vw;
+  }
+
+  .header-nav li a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: black; /* Text color on hover */
+    border-radius: 5%;  
+  }
+
+
+.hori-center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+p{
+    font-family: "Verdana";
+    font-size: 1.4vw;  
+    color: rgb(255, 206, 206); 
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+}
+.main-content-container
+{
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.content-inner
+{
+ width: 92%;
+/* Something here to wrap */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+.row-reverse{
+  flex-direction: row-reverse;
+}
+
+.content-block{
+  width: 40%;
+  padding: 1.5em;
+}
+.content-block img{
+ width:90%;
+ justify-content: center;
+}
+
+.down-arrow-container{
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);  /* adjust for the width of the arrow to make sure it's centred */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  overflow: hidden; /* Stop overflow outside circle */
+  background-color:#e2c7be;
+  padding: 10px;
+  filter: opacity(80%)
+}
+  
+
+.down-arrow-container img {
+  width: 3.5em; /* size of image inside  */
+}
+
+
+@media screen and (max-width: 640px){
+  
+  .main-content-inner
+  {
+   width: 95%;
+  }
+
+  .content-block{
+    width: 90%;
+  }
+
+  p{
+    font-size: 3.5vw;
+  }
+  h1{
+    font-size: 9.0vw;
+    color:#e4c8be;     
+  }
+
+  .header-nav li a {
+
+    text-align: center; /* Center text */
+    padding: 2.5vw 2.5vw; /* Spacing around text */
+    text-decoration: none; /* Remove default underline */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 7vw;
+    /* border: 3px solid #000; */
+    border-radius: 50%;
+    overflow: hidden; /* Stop overflow outside circle */
+    background-color:#e2c7be;
+    margin-left: 1em;
+}
+
+.logo-container img {
+     width: 7vw; /* controls size of image inside  */
+}
+   
+}
