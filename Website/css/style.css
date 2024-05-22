@@ -68,7 +68,7 @@ html {
     padding: 0 1em;
     height : 100%;
     align-content: center;
-    background-color: #ffffff;
+    background-color: #dee1e3;
     color: #001323; /* black text for white background*/
     margin-left: auto;
     display: flex;
@@ -135,12 +135,14 @@ h2 {
   margin: 0;
 }
 
+/*horizontally centres item*/
 .hori-center{
   margin: auto;
   width: 50%;
   padding: 10px;
 }
 
+/*reverse flex order*/
 .row-reverse{
   flex-direction: row-reverse;
 }
@@ -155,6 +157,8 @@ h2 {
   align-items: center;
 }
 
+
+
 /*independent controls of text block dimensions for scaling purposes*/
 .text-block{
     width: 50%;
@@ -164,6 +168,28 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+.portrait-container{
+    height: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden; /*crop the image inside to circle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait-container img{
+    width: 100%;
+    height: 100%;
+}
+
+#welcome
+{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .content-block img{
  min-height: 100%;
@@ -484,8 +510,8 @@ ul{
                 hyphens: none; /* remove hyphens because there is too many with narrow screen*/
                 width: 100%;
                 /*adjust margins to fit more text*/
-                margin-left: 2.5em;
-                margin-right: 2.5em;
+                margin: 0;
+                margin-top: 1em;
             }
 
             h1{
@@ -514,6 +540,7 @@ ul{
             padding-bottom:0.2em;
         }
 
+        /*main text content size*/
         .about p {
             font-size: 4vw;
             color: #EDFAFD;
@@ -523,6 +550,7 @@ ul{
             padding: 0;
         }
 
+        /*dot point list formatting*/
         ul{
             font-size: 4vw;
             color: #EDFAFD;
