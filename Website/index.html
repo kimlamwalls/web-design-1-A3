@@ -14,13 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Gentium+Plus:wght@700&family=Roboto&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-          rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Gentium+Plus:wght@700&family=Roboto&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
           rel="stylesheet">
     <link rel="icon" type="image/png" href="images/icon.png">
 </head>
@@ -43,7 +37,7 @@
             <a class="logo" href="index.html"> <img src="images/logo.png" alt="Ivy Mae logo"></a>
         </div>
         <ul>
-            <a class="nav-link" href="#photos">Portraiture</a>
+            <a class="nav-link" href="#portraiture">Portraiture</a>
             <a class="nav-link" href="#still-life">Still Life</a>
             <a class="nav-link" href="#about">About</a>
              <a class="right-link" href="javascript:location.href='mailto:'
@@ -70,7 +64,7 @@
     </section>
     <!--SECTION 2 Portraiture-->
     <section>
-        <div id="photos" class="content-inner row-reverse">
+        <div id="portraiture" class="content-inner row-reverse">
             <div class="content-block">
                 <img src="images/portrait-1.jpg" alt="family portrait">
             </div>
@@ -150,7 +144,7 @@
 <!--==MAIN CONTENT ENDS==-->
 
 <!--FOOTER-->
-<!-- I would put less divs inside but couldnt work out why things
+<!-- I would put less divs inside but couldn't work out why things
 weren't displaying how I wanted inside footer tag only-->
 <footer>
     <div class="footer-container">
@@ -169,15 +163,15 @@ weren't displaying how I wanted inside footer tag only-->
         <!--Links -->
         <div class="footer-links-container" >
             <ul>
-                <li><a href="#photos">Photos</a></li>
-                <li><a href="#still-life">Projects</a></li>
+                <li><a href="#portraiture">Portraiture</a></li>
+                <li><a href="#still-life">Still Life</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="javascript:location.href='mailto:' + ['kimlamwalls', 'gmail.com'].join('@')">Contact</a></li>
                 <!--button for border test-->
             </ul>
         </div>
     </div>
-
+    <!--Mobile version of footer to only show when display on narrow screens-->
     <div id="mobile-footer">
             <a href="index.html"> <img src="images/logo.png" alt="Ivy Mae logo"></a>
         <div class="footer-contact-container">
@@ -194,7 +188,6 @@ weren't displaying how I wanted inside footer tag only-->
 
 <!--==============JAVASCRIPT=================-->
 <script>
-
     /*Scroll indicator that fades when scrolling down*/
     document.addEventListener("scroll", function() {
         const scrollIndicator = document.getElementById("scrollIndicator");
@@ -213,7 +206,7 @@ weren't displaying how I wanted inside footer tag only-->
 
     // Function to toggle the visibility of the back to top button
     function toggleVisibility() {
-        var button = document.getElementById('backToTopButton');
+        const button = document.getElementById('backToTopButton');
         // 100px is the scroll threshold for showing the back to top button
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             button.style.display = "block";
@@ -221,14 +214,11 @@ weren't displaying how I wanted inside footer tag only-->
             button.style.display = "none";
         }
     }
-
     // Event listener for scroll events
     window.onscroll = function() {
         toggleVisibility();
     };
-
 </script>
-
 
 
 </body>

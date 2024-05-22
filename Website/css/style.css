@@ -271,8 +271,11 @@ ul{
     background-color: #333; /* Dark background */
     color: white; /* White text */
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.2em;
+    filter: opacity(80%);
 }
 
 
@@ -552,15 +555,14 @@ ul{
 
         /*adjust back to top button to be suitable for mobile*/
         #backToTopButton {
-            /*make its position different*/
+            /*Position better for mobile screen sizes*/
             bottom: 20px;
             right: 40px;
-            background-color: #333; /* Dark background */
-            color: white; /* White text */
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 5px;
             filter: opacity(70%);
+            /*Adjust size for mobile*/
+            padding: 8px;
+            font-size: 1em;
+
         }
 
 
