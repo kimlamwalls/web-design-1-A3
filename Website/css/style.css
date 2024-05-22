@@ -508,7 +508,7 @@ ul{
             p{
                 font-size: 5vw;
                 hyphens: none; /* remove hyphens because there is too many with narrow screen*/
-                width: 100%;
+                width: 90%;
                 /*adjust margins to fit more text*/
                 margin: 1em 0 0;
             }
